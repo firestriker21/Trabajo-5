@@ -5,8 +5,8 @@ var io = require('socket.io')(server);
 
 var messages = [{
   id: 1,
-  text: "h",
-  author: "juan"
+  text: "Bienvenidos",
+  author: "Aaron"
 }]
 
 app.use(express.static('public'));
