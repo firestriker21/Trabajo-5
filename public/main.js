@@ -1,5 +1,4 @@
-var socket = io.connect('http://chatnode5.herokuapp.com/
-',{'forceNew':true});
+var socket = io();//.connect('http://chatnode5.herokuapp.com/',{'forceNew':true});
 
 socket.on('messages',function(data){
   console.log(data);
