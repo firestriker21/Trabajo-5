@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
+var PORT = process.env.PORT || 8080;
 
 var messages = [{
   id: 1,
@@ -25,6 +26,6 @@ io.on('connection', function(socket) {
     io.sockets.emit('messages', messages);
   });
 });
-server.listen(8080, function(){
+server.listen(PORT, function(){
   console.log("Servidor corriendo en 8080");
 });
