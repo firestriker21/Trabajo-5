@@ -29,4 +29,3 @@ io.on('connection', function(socket) {
 server.listen(PORT, function(){
   console.log("Servidor corriendo en 8080");
 });
-*/
